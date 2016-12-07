@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    style="@style/example_container"
+    android:background="#FFFFFF">
+
+    <TextView
+        style="@style/header_label"
+        android:text="Address Information" />
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Address" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/address_label_one"
+            android:text="- - -"/>
+
+        <TextView
+            android:id="@+id/more_button"
+            style="@style/address_label_two"
+            android:text="More" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Default"/>
+
+        <TextView
+            android:id="@+id/defaults"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Present"/>
+
+        <TextView
+            android:id="@+id/present"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Permanent"/>
+
+        <TextView
+            android:id="@+id/permanent"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Location Type"/>
+
+        <TextView
+            android:id="@+id/location_type"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp">
+
+            <LinearLayout
+                android:id="@+id/layout_visibility"
+                android:visibility="gone"
+                style="@style/example_container"
+                android:background="#FFFFFF">
+
+            <TextView
+                style="@style/header_label"
+                android:text="Address"
+                android:textColor="@color/colorAccent"/>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Address Line1"/>
+
+                <TextView
+                    android:id="@+id/addressline1"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Address Line2"/>
+
+                <TextView
+                    android:id="@+id/addressline2"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="City Name"/>
+
+                <TextView
+                    android:id="@+id/cityname"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Region"/>
+
+                <TextView
+                    android:id="@+id/region"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Region Name"/>
+
+                <TextView
+                    android:id="@+id/regionname"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Country"/>
+
+                <TextView
+                    android:id="@+id/country"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Postal Code"/>
+
+                <TextView
+                    android:id="@+id/postalcode"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Postal Add"/>
+
+                <TextView
+                    android:id="@+id/postaladd"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

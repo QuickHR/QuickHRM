@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/example_container"
+        android:background="#FFFFFF">
+
+    <TextView
+        style="@style/header_label"
+        android:text="Qualification Information" />
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Degree" />
+
+        <TextView
+            android:id="@+id/degree"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="University"/>
+
+        <TextView
+            android:id="@+id/university"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Year of Passing"/>
+
+        <TextView
+            android:id="@+id/yearof_passing"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Percentage"/>
+
+        <TextView
+            android:id="@+id/percentage"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Specialization"/>
+
+        <TextView
+            android:id="@+id/specialization"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Institute"/>
+
+        <TextView
+            android:id="@+id/institute"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+</LinearLayout>
+    </FrameLayout>

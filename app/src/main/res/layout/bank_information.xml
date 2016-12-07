@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/example_container"
+        android:background="#FFFFFF">
+
+    <TextView
+        style="@style/header_label"
+        android:text="Bank Information" />
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Account no." />
+
+        <TextView
+            android:id="@+id/account_num"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Account name"/>
+
+        <TextView
+            android:id="@+id/account_name"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Bank name"/>
+
+        <TextView
+            android:id="@+id/bank_name"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Branch name"/>
+
+        <TextView
+            android:id="@+id/branch_name"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Description"/>
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Default"/>
+
+        <TextView
+            android:id="@+id/defaultss"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+</LinearLayout>
+    </FrameLayout>

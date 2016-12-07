@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55sp"
+    android:weightSum="1"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/id_text_view"
+        android:layout_width="0sp"
+        android:layout_height="55sp"
+        android:layout_weight="0.01"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="55sp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.65"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingTop="10sp"
+        android:text="textview"
+        android:gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/spinner_textview"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.35"
+            android:textSize="12sp"
+            android:text="textview"
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rupee_textview"
+        android:layout_width="0sp"
+        android:layout_height="55sp"
+        android:layout_weight="0.25"
+        android:textColor="@color/colorPrimary"
+        android:text="500  rs"
+        android:gravity="center|right"/>
+
+    <ImageView
+        android:id="@+id/image_textview"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@drawable/attachment"/>
+
+</LinearLayout>

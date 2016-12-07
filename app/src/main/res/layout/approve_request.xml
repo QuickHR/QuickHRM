@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#FFFFFF"
+    android:padding="10sp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:text="Leave Approval"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:gravity="center|left"
+        android:background="#E6E6FA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Leave Requestor"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="Exceloid Office"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#B0C4DE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Leave Type"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="Vaccination Leave"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#B0C4DE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Leave Period"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="2016-11-01 to 2016-11-4"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#B0C4DE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Status"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="Submitted"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:text="Leave Approval"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="10sp"
+        android:layout_marginTop="15sp"
+        android:gravity="center|left"
+        android:background="#E6E6FA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Leave Requestor"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="Exceloid Office"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#B0C4DE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Leave Type"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="Medical Leave"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#B0C4DE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Leave Period"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="2016-11-01 to 2016-11-4"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#B0C4DE"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:text="Status"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingLeft="10sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:text="Submitted"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

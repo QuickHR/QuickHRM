@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/example_container"
+    android:background="#FFFFFF">
+
+    <TextView
+        style="@style/header_label"
+        android:text="Profile Information" />
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Employee Name"/>
+
+        <TextView
+            android:id="@+id/employee_name"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Employee Id"/>
+
+        <TextView
+            android:id="@+id/employee_id"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Designation"/>
+
+        <TextView
+            android:id="@+id/designation"
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <!--<LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            android:id="@+id/example_business"
+            style="@style/text_label"
+            android:text="Branch name"/>
+
+        <TextView
+            android:id="@+id/example_business_field"
+            style="@style/field_label"
+            android:text="Panjagutta"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Description"/>
+
+        <TextView
+            style="@style/field_label"
+            android:text="- - -"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>
+
+    <LinearLayout
+        style="@style/horizontal_label">
+
+        <TextView
+            style="@style/text_label"
+            android:text="Default"/>
+
+        <TextView
+            style="@style/field_label"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_label"></View>-->
+</LinearLayout>

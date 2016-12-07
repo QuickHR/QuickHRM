@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/example_container"
+        android:background="#FFFFFF">
+
+        <TextView
+            style="@style/header_label"
+            android:text="Employ Information" />
+
+        <LinearLayout
+            style="@style/horizontal_label">
+
+            <TextView
+                style="@style/text_label"
+                android:text="First Name" />
+
+            <TextView
+                android:id="@+id/dictionary_firstname"
+                style="@style/field_label"
+                android:text="- - -"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_label"></View>
+
+
+        <LinearLayout
+            style="@style/horizontal_label">
+
+            <TextView
+                style="@style/text_label"
+                android:text="Middle Name"/>
+
+            <TextView
+                android:id="@+id/dictionary_middlename"
+                style="@style/field_label"
+                android:text="- - -"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_label"></View>
+
+        <LinearLayout
+            style="@style/horizontal_label">
+
+            <TextView
+                style="@style/text_label"
+                android:text="Last Name"/>
+
+            <TextView
+                android:id="@+id/dictionary_lastname"
+                style="@style/field_label"
+                android:text="- - -"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_label"></View>
+
+        <LinearLayout
+            style="@style/horizontal_label">
+
+            <TextView
+                style="@style/text_label"
+                android:text="Email"/>
+
+            <TextView
+                android:id="@+id/dictionary_email"
+                style="@style/field_label"
+                android:text="- - -"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_label"></View>
+
+        <LinearLayout
+            style="@style/horizontal_label">
+
+            <TextView
+                style="@style/text_label"
+                android:text="Phone No."/>
+
+            <TextView
+                android:id="@+id/dictionary_phonenum"
+                style="@style/field_label"
+                android:text="- - -"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_label"></View>
+
+    </LinearLayout>
+</FrameLayout>

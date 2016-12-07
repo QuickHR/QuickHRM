@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="10sp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/first_Image_view"
+            android:layout_width="75sp"
+            android:layout_height="match_parent"
+            android:layout_margin="1sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/second_Image_view"
+            android:layout_width="75sp"
+            android:layout_height="match_parent"
+            android:layout_margin="1sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/third_Image_view"
+            android:layout_width="75sp"
+            android:layout_height="match_parent"
+            android:layout_margin="1sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/fourth_Image_view"
+            android:layout_width="75sp"
+            android:layout_height="match_parent"
+            android:layout_margin="1sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/add_attachment"
+            android:layout_width="75sp"
+            android:layout_height="match_parent"
+            android:text="Add\nAttachment"
+            android:gravity="center"
+            android:padding="10sp"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_add_black_24dp"
+            android:visibility="visible"
+            android:background="#E6E6FA"
+            android:layout_margin="1sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:background="#E6E6FA"
+        android:paddingLeft="5sp"
+        android:gravity="center|left"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10sp"
+        android:text="Expense Details"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/date_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"
+        android:layout_marginTop="5sp"
+        android:paddingRight="10sp"
+        android:text="Select Date"
+        android:drawableRight="@drawable/calendar"
+        android:paddingLeft="5sp"
+        android:textColor="#000000"
+        android:gravity="center|left">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray"></View>
+
+    <Spinner
+        android:id="@+id/items_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"
+        >
+    </Spinner>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:layout_marginTop="3sp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_amount"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:textSize="14sp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:gravity="center|left"
+            android:paddingLeft="5sp"
+            android:hint="Enter Amount" />
+
+        <View
+            android:layout_width="0.5sp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5sp"
+            android:background="@android:color/darker_gray"></View>
+
+        <Spinner
+            android:id="@+id/rupee_spinner"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray"></View>
+
+    <EditText
+        android:id="@+id/attendees_howmany"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"
+        android:textSize="14sp"
+        android:layout_marginTop="3sp"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:gravity="center|left"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:paddingLeft="5sp"
+        android:hint="how many Attendees"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray"></View>
+
+    <Button
+        android:id="@+id/save_expenses"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.09"
+        android:text="Save Expense"
+        android:layout_marginTop="10sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Exceloid HCM</string>
+    <string name="home_name">Home</string>
+    <string name="home_week">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
