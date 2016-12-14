@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.exceloid_android.exceloid_mobileapp">
+    package="com.example.exceloid_android.quickhrmobileapp" >
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/exceloid_logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:windowSoftInputMode="stateAlwaysHidden"
+        android:theme="@style/AppTheme.NoActionBar" >
         <activity
-            android:name=".Login_Activity"
-            android:label="@string/app_name"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,130 +24,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".MainActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Edit_TimeSheetActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Tasks"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity
-            android:name=".Update_TimeSheetActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Tasks"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity
-            android:name=".Navigation_Activity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Settings_Activity"
-            android:label="@string/action_settings"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="stateAlwaysHidden">
-        </activity>
-
-        <activity
-            android:name=".Dictionary_Activity"
-            android:label="Dictionary Information"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="stateAlwaysHidden">
-        </activity>
-
-        <activity
-            android:name=".Create_LeaveRequest"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="New Request"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".View_Request"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="View Request"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Leave_Balance"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Leave Balance"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Approve_Request"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Approve Request"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Leave_Calender"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Leave Calender"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Expenses_Activity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Expenses"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Expenses_Reports_Activity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Expenses Reports"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".AddExpenses_Activity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="New Expense"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".AddExpenses_Reports_Activity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="New Expense Reports"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name=".Update_ExpensesActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="Update Expense Reports"
-            android:theme="@style/AppTheme">
-        </activity>
-
-       <!-- <activity
-            android:name=".Login_Activity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>-->
-
-        <activity
-            android:name=".Sample_Activity"
-            android:theme="@style/AppTheme"
-            android:label="Image View">
-        </activity>
 
     </application>
 
