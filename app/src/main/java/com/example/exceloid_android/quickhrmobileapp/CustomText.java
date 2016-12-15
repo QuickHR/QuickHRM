@@ -1,3 +1,4 @@
+/*
 package com.example.exceloid_android.quickhrmobileapp;
 
 import android.content.Context;
@@ -6,11 +7,14 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
+*/
 /**
  * Created by Exceloid-Android on 07-12-2016.
- */
-public class CustomText extends Activity {
-    /*public CustomText(Context context, AttributeSet attrs, int defStyle) {
+ *//*
+
+public class CustomText extends MainActivity {
+    */
+/*public CustomText(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
            // this.setTypeface(Typeface.createFromAsset(context.getAssets(),"fonts/Roboto-Italic.ttf"));
     }
@@ -36,5 +40,7 @@ public class CustomText extends Activity {
         } else {
             super.setTypeface(Typeface.createFromAsset(getContext().getAssets(), "fonts/MaterialIcons-Regular.ttf"));
         }
-    }*/
+    }*//*
+
 }
+*/
