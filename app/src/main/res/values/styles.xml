@@ -47,6 +47,11 @@
 
     </style>
 
+    <style name="AppTheme.NoActionBar.AppBarOverlay"
+           parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
     android:layout_width="0sp"
     android:layout_height="match_parent"
     android:layout_weight="0.4"

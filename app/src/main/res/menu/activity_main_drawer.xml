@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_av_timer_black_24dp"
+            android:title="DashBoard"/>
+        <item
+            android:id="@+id/leaves"
+            android:icon="@drawable/calendar"
+            android:title="Leaves"/>
+        <item
+            android:id="@+id/claims"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="Claims"/>
+        <item
+            android:id="@+id/timesheets"
+            android:icon="@drawable/ic_grid_on_black_24dp"
+            android:title="TimeSheets"/>
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Reports"/>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings"/>
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>
+        </menu>
+    </item>-->
+
+</menu>

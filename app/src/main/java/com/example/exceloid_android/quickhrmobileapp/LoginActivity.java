@@ -33,6 +33,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -71,6 +72,15 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if(username.getText().toString().equals("123")&&password.getText().toString().equals("123")){
+
+                    Intent in=new Intent(LoginActivity.this,MainActivity.class);
+                    startActivity(in);
+
+                }else{
+                    Toast.makeText(LoginActivity.this,"Check Your Credentials!",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

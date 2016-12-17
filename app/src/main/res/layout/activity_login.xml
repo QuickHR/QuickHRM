@@ -5,16 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:padding="0sp"
+    android:padding="20sp"
     android:gravity="center"
     android:background="@color/color1">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="110sp"
-        android:layout_margin="10sp"
-        android:background="@drawable/custom_drop_shadow"
-        android:src="@drawable/quicklogo"/>
+        android:layout_width="220sp"
+        android:layout_height="80sp"
+        android:background="@drawable/quicklogos"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -32,8 +30,6 @@
         android:layout_height="0sp"
         android:background="@drawable/shape"
         android:layout_marginTop="25sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
         android:paddingLeft="10sp"
         android:hint="Email Address"
         android:typeface="serif"
@@ -48,8 +44,6 @@
         android:layout_height="0sp"
         android:background="@drawable/shape"
         android:layout_marginTop="10sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
         android:paddingLeft="10sp"
         android:hint="Password"
         android:inputType="textWebPassword"
@@ -64,8 +58,6 @@
         android:layout_height="0sp"
         android:layout_weight="0.2"
         android:layout_marginTop="25sp"
-        android:layout_marginLeft="25sp"
-        android:layout_marginRight="25sp"
         android:text="Login"
         android:textSize="20sp"
         android:textColor="#FFFFFF"
