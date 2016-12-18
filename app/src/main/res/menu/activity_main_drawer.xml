@@ -22,10 +22,16 @@
             android:id="@+id/reports"
             android:icon="@drawable/ic_assignment_black_24dp"
             android:title="Reports"/>
+    </group>
+
+    <group
+        android:checkableBehavior="none">
+
         <item
             android:id="@+id/settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Settings"/>
+
     </group>
 
    <!-- <item android:title="Communicate">

@@ -1,5 +1,7 @@
 package com.example.exceloid_android.quickhrmobileapp;
 
+import android.content.Intent;
+import android.graphics.Matrix;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.design.widget.NavigationView;
@@ -11,8 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity{
+       // implements NavigationView.OnNavigationItemSelectedListener {
 
     Fragment fragment = null;
 
@@ -30,7 +32,13 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        setupDrawerContent(navigationView);
+        //navigationView.setNavigationItemSelectedListener(this);
+
+        fragment = new DashBoardFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+        setTitle("DashBoard");
+        navigationView.getMenu().getItem(0).setChecked(true);
     }
 
     @Override
@@ -65,10 +73,65 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public void setupDrawerContent(NavigationView navigationView) {
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(MenuItem menuItem) {
+                        selectDrawerItem(menuItem);
+
+                        return true;
+                    }
+                });
+    }
+
+    public void selectDrawerItem(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+
+        switch (item.getItemId()) {
+
+            case R.id.dashboard:
+                fragment = new DashBoardFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+                item.setChecked(true);
+                setTitle(item.getTitle());
+                break;
+            case R.id.leaves:
+                fragment = new LeaveRequest();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+                item.setChecked(true);
+                setTitle(item.getTitle());
+                break;
+            case R.id.claims:
+                fragment = new ClaimsFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+                item.setChecked(true);
+                setTitle(item.getTitle());
+                break;
+            case R.id.reports:
+                fragment = new ReportsFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+                item.setChecked(true);
+                setTitle(item.getTitle());
+                break;
+            case R.id.timesheets:
+                fragment = new TimeSheetFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+                item.setChecked(true);
+                setTitle(item.getTitle());
+                break;
+            case R.id.settings:
+                Intent in = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(in);
+                //  Toast.makeText(getApplicationContext(), menuItem.getTitle(), Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawers();
+    }
+        /*int id = item.getItemId();
 
         if (id == R.id.dashboard) {
             // Handle the camera action
@@ -86,28 +149,22 @@ public class MainActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
             item.setChecked(true);
             setTitle(item.getTitle());
-
         } else if (id == R.id.timesheets) {
-            fragment=new ClaimsFragment();
+            fragment=new TimeSheetFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
             item.setChecked(true);
             setTitle(item.getTitle());
-
         } else if (id == R.id.reports) {
-            fragment=new ClaimsFragment();
+            fragment=new ReportsFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
             item.setChecked(true);
             setTitle(item.getTitle());
-
         } else if (id == R.id.settings) {
-            fragment=new ClaimsFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
-            item.setChecked(true);
-            setTitle(item.getTitle());
+            Intent in=new Intent(MainActivity.this,SettingsActivity.class);
+            startActivity(in);
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
+    }*/
 }

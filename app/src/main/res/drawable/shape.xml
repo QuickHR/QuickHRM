@@ -5,9 +5,8 @@
     android:endColor="#FFFFFF"
     android:angle="270">
 </gradient>
-    <stroke android:width="0sp"
+    <stroke android:width="0.5sp"
         android:color="@color/color1" />
-
     <corners android:radius="0sp" />
 
 </shape>

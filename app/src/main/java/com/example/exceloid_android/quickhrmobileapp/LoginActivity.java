@@ -73,14 +73,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if(username.getText().toString().equals("123")&&password.getText().toString().equals("123")){
+               // if(username.getText().toString().equals("123")&&password.getText().toString().equals("123")){
 
                     Intent in=new Intent(LoginActivity.this,MainActivity.class);
                     startActivity(in);
 
-                }else{
+                /*}else{
                     Toast.makeText(LoginActivity.this,"Check Your Credentials!",Toast.LENGTH_SHORT).show();
-                }
+                }*/
 
             }
         });

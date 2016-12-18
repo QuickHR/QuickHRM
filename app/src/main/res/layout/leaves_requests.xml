@@ -9,11 +9,41 @@
     android:padding="20sp">
 
     <LinearLayout
+        android:id="@+id/leave_Calender"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:background="@drawable/leave_circle"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/imah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_event_note_black_24dp"/>
+
+        <TextView
+            android:layout_below="@+id/imah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave\nCalender"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="1"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:id="@+id/linear_layout"
@@ -24,7 +54,7 @@
             android:layout_gravity="">
 
             <LinearLayout
-                android:id="@+id/createLeave_Request"
+                android:id="@+id/createLeaveRequest"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -47,7 +77,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/view_Request"
+                android:id="@+id/viewRequest"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -72,14 +102,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_below="@+id/linear_layout"
+            android:layout_below="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="0.45"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/leave_Balance"
+                android:id="@+id/leaveBalance"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -102,7 +132,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/approve_Requests"
+                android:id="@+id/approveRequests"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -125,33 +155,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/leave_Calender"
-        android:layout_width="130sp"
-        android:layout_height="130sp"
-        android:background="@drawable/leave_circle"
-        android:orientation="vertical"
-        android:visibility="gone"
-        android:gravity="center"
-        android:layout_centerInParent="true">
-
-        <ImageView
-            android:id="@+id/imah"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/ic_event_note_black_24dp"/>
-
-        <TextView
-            android:layout_below="@+id/imah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Leave\nCalender"
-            android:gravity="center"
-            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 </RelativeLayout>

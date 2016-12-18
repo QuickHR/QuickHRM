@@ -3,33 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="80sp"
-    android:background="@drawable/side_nav_bar"
+    android:layout_height="95sp"
+    android:background="@color/colorAccent"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="bottom"
-    android:padding="20sp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
-
-   <!-- <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@android:drawable/sym_def_app_icon"/>-->
+    android:paddingLeft="20sp">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="95sp"
         android:text="Company Name"
-        android:textSize="20sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
-
-<!--
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="android.studio@android.com"/>
--->
+        android:textSize="18sp"
+        android:gravity="bottom|left"
+        android:paddingBottom="20sp"
+        android:textColor="#FFFFFF"/>
 
 </LinearLayout>
