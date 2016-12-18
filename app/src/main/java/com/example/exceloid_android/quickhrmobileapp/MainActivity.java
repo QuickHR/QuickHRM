@@ -14,7 +14,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    Fragment fragment;
+    Fragment fragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,13 +82,28 @@ public class MainActivity extends AppCompatActivity
             item.setChecked(true);
             setTitle(item.getTitle());
         } else if (id == R.id.claims) {
+            fragment=new ClaimsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+            item.setChecked(true);
+            setTitle(item.getTitle());
 
         } else if (id == R.id.timesheets) {
+            fragment=new ClaimsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+            item.setChecked(true);
+            setTitle(item.getTitle());
 
         } else if (id == R.id.reports) {
+            fragment=new ClaimsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+            item.setChecked(true);
+            setTitle(item.getTitle());
 
         } else if (id == R.id.settings) {
-
+            fragment=new ClaimsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+            item.setChecked(true);
+            setTitle(item.getTitle());
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
