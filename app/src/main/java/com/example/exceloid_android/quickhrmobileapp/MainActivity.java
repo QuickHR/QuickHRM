@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-    
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -73,10 +73,14 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.dashboard) {
             // Handle the camera action
             fragment=new DashBoardFragment();
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+            item.setChecked(true);
+            setTitle(item.getTitle());
         } else if (id == R.id.leaves) {
             fragment=new LeaveRequest();
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
+            item.setChecked(true);
+            setTitle(item.getTitle());
         } else if (id == R.id.claims) {
 
         } else if (id == R.id.timesheets) {
