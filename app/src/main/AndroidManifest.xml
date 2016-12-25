@@ -41,24 +41,27 @@
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
-
         <activity
             android:name=".ViewRequest"
             android:label="View Request"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
-
         <activity
             android:name=".ApproveRequest"
             android:label="Approve Request"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
-
         <activity
             android:name=".LeaveBalance"
             android:label="Leave Balance"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".ClaimRequest"
+            android:label="New Claim Request"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden">
         </activity>

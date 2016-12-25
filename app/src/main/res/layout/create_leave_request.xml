@@ -24,7 +24,7 @@
             android:paddingLeft="5sp"
             android:background="#E6E6FA"
             android:textColor="@color/colorAccent"
-            android:text="Date"
+            android:text="Leave Application"
             android:id="@+id/textView6" />
 
         <LinearLayout
@@ -40,7 +40,7 @@
                 android:layout_weight="0.4"
                 android:paddingLeft="5sp"
                 android:gravity="center|left"
-                android:text="From"/>
+                android:text="From Date"/>
 
             <TextView
                 android:id="@+id/from_date"
@@ -74,7 +74,7 @@
                 android:layout_weight="0.4"
                 android:gravity="center|left"
                 android:paddingLeft="5sp"
-                android:text="To"/>
+                android:text="To Date"/>
 
             <TextView
                 android:id="@+id/to_date"

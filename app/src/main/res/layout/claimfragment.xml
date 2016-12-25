@@ -24,12 +24,12 @@
             android:layout_gravity="">
 
             <LinearLayout
-                android:id="@+id/createLeaveRequest"
+                android:id="@+id/createClaimRequest"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:layout_margin="5sp"
-                android:background="#edb693"
+                android:background="#3e6fb0"
                 android:orientation="vertical"
                 android:gravity="center">
 
@@ -41,7 +41,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Create Leave\nRequest"
+                    android:text="Create Claim\nRequest"
                     android:gravity="center"
                     android:textColor="@color/colorWhite"/>
 
@@ -52,7 +52,7 @@
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:background="#92cdd1"
+                android:background="#3bd4d4"
                 android:orientation="vertical"
                 android:layout_margin="5sp"
                 android:gravity="center">
@@ -60,12 +60,12 @@
                 <ImageView
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:background="@drawable/ic_visibility_black_24dp"/>
+                    android:background="@drawable/ic_event_available_black_24dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="View\nRequests"
+                    android:text="Approved\nRequests"
                     android:gravity="center"
                     android:textColor="@color/colorWhite"/>
 
@@ -81,48 +81,46 @@
             android:layout_gravity="">
 
             <LinearLayout
-                android:id="@+id/leaveBalance"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:layout_margin="5sp"
-                android:background="#9099f0"
+                android:background="#8075c7"
                 android:orientation="vertical"
                 android:gravity="center">
 
                 <ImageView
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:background="@drawable/ic_timelapse_black_24dp"/>
+                    android:background="@drawable/ic_event_busy_black_24dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Leave\nBalance"
+                    android:text="Rejected\nRequests"
                     android:gravity="center"
                     android:textColor="@color/colorWhite"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/approveRequests"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:orientation="vertical"
-                android:background="#ed9593"
+                android:background="#db1f32"
                 android:layout_margin="5sp"
                 android:gravity="center">
 
                 <ImageView
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:background="@drawable/ic_event_available_black_24dp"/>
+                    android:background="@drawable/ic_help_outline_black_24dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Approved\nRequests"
+                    android:text="Pending\nRequests"
                     android:gravity="center"
                     android:textColor="@color/colorWhite"/>
 

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 /**
@@ -19,10 +20,10 @@ public class LeaveRequest extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View leave=inflater.inflate(R.layout.leaves_requests,container,false);
 
-        leave_Request=(LinearLayout)leave.findViewById(R.id.createLeaveRequest);
-        view_request=(LinearLayout)leave.findViewById(R.id.viewRequest);
-        leave_Balance=(LinearLayout)leave.findViewById(R.id.leaveBalance);
-        approve_Request=(LinearLayout)leave.findViewById(R.id.approveRequests);
+        leave_Request=(LinearLayout) leave.findViewById(R.id.createLeaveRequest);
+        view_request=(LinearLayout) leave.findViewById(R.id.viewRequest);
+        leave_Balance=(LinearLayout) leave.findViewById(R.id.leaveBalance);
+        approve_Request=(LinearLayout) leave.findViewById(R.id.approveRequests);
 
         leave_Request.setOnClickListener(new View.OnClickListener() {
             @Override
