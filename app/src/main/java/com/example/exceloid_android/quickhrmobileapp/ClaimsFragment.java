@@ -9,16 +9,47 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-/**
- * Created by Exceloid-Android on 18-12-2016.
- */
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.charts.PieChart;
+
+import java.util.ArrayList;
 
 public class ClaimsFragment extends Fragment {
+    PieChart pieChart;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View claim=inflater.inflate(R.layout.claimfragment,container,false);
 
         LinearLayout claimRequest=(LinearLayout)claim.findViewById(R.id.createClaimRequest);
+
+        pieChart = (PieChart)claim.findViewById(R.id.chart);
+
+        ArrayList<Entry> entries = new ArrayList<>();
+        entries.add(new Entry(10f, 0));
+        entries.add(new Entry(5f, 1));
+        entries.add(new Entry(3f, 2));
+        entries.add(new Entry(2f, 3));
+
+        PieDataSet dataset = new PieDataSet(entries, "");
+
+        ArrayList<String> labels = new ArrayList<>();
+        labels.add("Created");
+        labels.add("Approved");
+        labels.add("Rejected");
+        labels.add("Pending");
+
+        PieData data = new PieData(labels, dataset);
+        dataset.setColors(ColorTemplate.COLORFUL_COLORS); //
+        pieChart.setDescription("");
+        pieChart.setData(data);
+        data.setDrawValues(false);
+
+        pieChart.animateY(3000);
+
+        //pieChart.saveToGallery("/sd/mychart.jpg", 85);
 
         claimRequest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,4 +60,28 @@ public class ClaimsFragment extends Fragment {
         });
         return claim;
     }
+
+    /*@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        pieChartData();
+    }
+
+    public void pieChartData(){
+
+
+
+    }@Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        pieChartData();
+    }
+
+    public void pieChartData(){
+
+
+
+    }*/
 }

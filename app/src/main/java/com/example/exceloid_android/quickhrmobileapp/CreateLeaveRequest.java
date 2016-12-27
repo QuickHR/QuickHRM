@@ -17,10 +17,11 @@ import java.util.Calendar;
 
 public class CreateLeaveRequest extends AppCompatActivity {
 
-    Spinner leaveSpinner,employeeSpinner;
+    Spinner leaveSpinner,employeeSpinner,leavePeriodSpinner;
     private static TextView to_date,from_date;
     String[] s1=new String[]{"--Select--","Test Admin","Test Employee","Kiran Nalla"};
     String[] s2=new String[]{"--Select--","Annual Leave","Medical Leave","Maternity Leave"};
+    String[] s3=new String[]{"--Select--","Full Day","Half Day"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class CreateLeaveRequest extends AppCompatActivity {
 
         employeeSpinner=(Spinner)findViewById(R.id.employeeSpinner);
         leaveSpinner=(Spinner)findViewById(R.id.spinnerLeaveType);
+        leavePeriodSpinner=(Spinner)findViewById(R.id.leavePeriodSpinner);
         to_date=(TextView)findViewById(R.id.to_date);
         from_date=(TextView)findViewById(R.id.from_date);
 
@@ -37,6 +39,8 @@ public class CreateLeaveRequest extends AppCompatActivity {
         employeeSpinner.setAdapter(adp);
         ArrayAdapter<String>adp1=new ArrayAdapter<String>(CreateLeaveRequest.this,R.layout.spinner,R.id.text_spinner,s2);
         leaveSpinner.setAdapter(adp1);
+        ArrayAdapter<String>adp2=new ArrayAdapter<String>(CreateLeaveRequest.this,R.layout.spinner,R.id.text_spinner,s3);
+        leavePeriodSpinner.setAdapter(adp2);
 
         from_date.setOnClickListener(new View.OnClickListener() {
             @Override

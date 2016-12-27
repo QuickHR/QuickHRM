@@ -4,38 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8sp"
+    android:padding="10sp"
     android:background="#FFFFFF"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="1"
-        android:gravity="center">
+        android:background="@drawable/shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="0.65"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:layout_marginTop="10sp"/>
+
+            <!--<View
+                android:layout_width="1sp"
+                android:layout_height="fill_parent"
+                android:background="@color/colorPrimary"></View>-->
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:paddingLeft="10sp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*  10.0"
+                    android:textColor="@color/colorPink"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Created Claims"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorPink"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*  5.0"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/colorOrange"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Approved Claims"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorOrange"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*  3.0"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/colorYellow"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rejected Claims"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorYellow"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*  2.0"
+                    android:layout_marginTop="10sp"
+                    android:textColor="@color/colorGreen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="pending Claims"
+                    android:textSize="11sp"
+                    android:textColor="@color/colorGreen"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:visibility="visible"
+            android:background="@color/colorPrimary"></View>
+
 
         <LinearLayout
             android:id="@+id/linear_layout"
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:layout_weight="0.2"
+            android:layout_height="95sp"
+            android:layout_weight="0.1"
             android:orientation="horizontal"
-            android:layout_gravity="">
+            android:layout_marginTop="5sp"
+            android:gravity="center">
 
             <LinearLayout
                 android:id="@+id/createClaimRequest"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:layout_margin="5sp"
-                android:background="#3e6fb0"
                 android:orientation="vertical"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
                     android:background="@drawable/ic_mode_edit_black_24dp"/>
 
                 <TextView
@@ -43,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:text="Create Claim\nRequest"
                     android:gravity="center"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorPink"/>
 
             </LinearLayout>
 
@@ -52,14 +145,12 @@
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:background="#3bd4d4"
                 android:orientation="vertical"
-                android:layout_margin="5sp"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
                     android:background="@drawable/ic_event_available_black_24dp"/>
 
                 <TextView
@@ -67,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="Approved\nRequests"
                     android:gravity="center"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorOrange"/>
 
             </LinearLayout>
 
@@ -75,23 +166,21 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:layout_weight="0.2"
+            android:layout_height="95sp"
+            android:layout_weight="0.1"
             android:orientation="horizontal"
-            android:layout_gravity="">
+            android:gravity="center">
 
             <LinearLayout
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:layout_margin="5sp"
-                android:background="#8075c7"
                 android:orientation="vertical"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
                     android:background="@drawable/ic_event_busy_black_24dp"/>
 
                 <TextView
@@ -99,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:text="Rejected\nRequests"
                     android:gravity="center"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorYellow"/>
 
             </LinearLayout>
 
@@ -108,13 +197,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:orientation="vertical"
-                android:background="#db1f32"
-                android:layout_margin="5sp"
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="60sp"
-                    android:layout_height="60sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
                     android:background="@drawable/ic_help_outline_black_24dp"/>
 
                 <TextView
@@ -122,7 +209,7 @@
                     android:layout_height="wrap_content"
                     android:text="Pending\nRequests"
                     android:gravity="center"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorGreen"/>
 
             </LinearLayout>
 
