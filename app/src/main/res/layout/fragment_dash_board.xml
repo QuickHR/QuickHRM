@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#aea09e"
     android:fillViewport="true"
-    android:padding="10sp">
+    >
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,10 +19,10 @@
             android:layout_height="100sp"
             android:layout_weight="0.2"
             android:gravity="center"
-            android:background="@drawable/shape"
+            android:background="#ebebeb"
             android:weightSum="1"
             android:padding="5sp"
-            android:layout_marginTop="5sp"
+
             android:orientation="horizontal">
 
             <LinearLayout
@@ -36,7 +36,7 @@
                     android:id="@+id/imageView"
                     android:layout_width="60sp"
                     android:layout_height="60sp"
-                    android:background="@drawable/ic_android_black_24dp"/>
+                    android:background="@mipmap/ic_launcher"/>
 
             </LinearLayout>
 
@@ -52,22 +52,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Welcome"
+                    android:typeface="serif"
+                    android:id = "@+id/dashboard_home"
                     android:textSize="12sp"
                     android:textColor="#000000"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="QuickHR Mobile App"
+                    android:typeface="sans"
+                    android:text="Kiran Nalla"
                     android:textColor="#000000"
                     android:layout_marginTop="5sp"
-                    android:textSize="14sp"/>
+                    android:textSize="16sp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Emp Id.ABC123"
-                    android:textColor="@android:color/holo_orange_dark"
+                    android:typeface="sans"
+                    android:textSize="14sp"
+                    android:text="Emp Id. ABC 123"
+                    android:textColor="#a5721e"
                     android:layout_marginTop="5sp"/>
 
                 <LinearLayout
@@ -77,7 +82,7 @@
                     android:gravity="center"
                     android:layout_marginTop="5sp"
                     android:padding="7sp"
-                    android:background="@drawable/shape">
+                    >
 
                     <Button
                         android:layout_width="0sp"
@@ -92,7 +97,7 @@
                     <Button
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
-                        android:background="#bf0000"
+                        android:background="#ff0000"
                         android:layout_weight="0.5"
                         android:layout_marginLeft="5sp"
                         android:textAllCaps="false"
@@ -109,8 +114,8 @@
             android:layout_width="match_parent"
             android:layout_height="100sp"
             android:layout_weight="0.8"
-            android:background="@drawable/shape"
-            android:layout_marginTop="20sp"
+
+
             android:padding="5sp"
             android:gravity="center"
             android:orientation="vertical"
@@ -130,7 +135,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
-                    android:background="#92cdd1"
+                    android:background="@drawable/dashboard_profile"
                     android:layout_margin="5sp"
                     android:gravity="center">
 
@@ -147,7 +152,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
-                    android:background="#edb693"
+                    android:background="@drawable/dashboard_leave"
                     android:layout_margin="5sp"
                     android:gravity="center">
 
@@ -164,7 +169,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
-                    android:background="#f5e7b0"
+                    android:background="@drawable/dashboard_claim"
                     android:layout_margin="5sp"
                     android:gravity="center">
 
@@ -189,7 +194,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:gravity="center|top"
-                    android:textColor="#ba7956"
+                    android:textColor="#373737"
+                    android:typeface="serif"
                     android:text="View profile"/>
 
                 <TextView
@@ -197,7 +203,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:gravity="center|top"
-                    android:textColor="#ba7956"
+                    android:textColor="#373737"
+                    android:typeface="serif"
                     android:text="Apply Leave"/>
 
                 <TextView
@@ -205,7 +212,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:gravity="center|top"
-                    android:textColor="#ba7956"
+                    android:textColor="#373737"
+                    android:typeface="serif"
                     android:text="Apply Claim"/>
             </LinearLayout>
 
@@ -220,7 +228,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
-                    android:background="#ed9593"
+                    android:background="@drawable/dashboard_reports"
                     android:layout_margin="5sp"
                     android:gravity="center">
 
@@ -236,14 +244,14 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
-                    android:background="#95dced"
+                    android:background="@drawable/dashboard_projects"
                     android:layout_margin="5sp"
                     android:gravity="center">
 
                     <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:background="@drawable/ic_portrait_black_24dp"/>
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:background="@drawable/ic_view_projects"/>
 
                 </LinearLayout>
 
@@ -252,7 +260,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
-                    android:background="#9099f0"
+                    android:background="@drawable/dashboard_timesheet"
                     android:layout_margin="5sp"
                     android:gravity="center">
 
@@ -277,15 +285,17 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:gravity="center|top"
-                    android:textColor="#ba7956"
-                    android:text="Test Item"/>
+                    android:textColor="#373737"
+                    android:typeface="serif"
+                    android:text="View Reports"/>
 
                 <TextView
                     android:layout_width="0sp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:gravity="center|top"
-                    android:textColor="#ba7956"
+                    android:textColor="#373737"
+                    android:typeface="serif"
                     android:text="View Projects"/>
 
                 <TextView
@@ -293,8 +303,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:gravity="center|top"
-                    android:textColor="#ba7956"
-                    android:text="Test Item"/>
+                    android:textColor="#373737"
+                    android:typeface="serif"
+                    android:text="Add Timesheet"/>
             </LinearLayout>
 
 
