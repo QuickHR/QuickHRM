@@ -4,18 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="#FFFFFF"
+    android:background="@color/colorWhite"
     android:padding="10sp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0sp"
         android:layout_weight="0.08"
-        android:background="#E6E6FA"
-        android:text="Quick HR"
+        android:background="@color/colorSecondary"
+        android:text="Kiran Nalla"
         android:gravity="center"
         android:textSize="18sp"
-        android:textColor="@color/colorAccent"
+        android:textColor="#FFFFFF"
         android:id="@+id/textView7" />
 
     <LinearLayout
@@ -25,7 +25,7 @@
         android:layout_marginTop="10sp"
         android:orientation="horizontal"
         android:paddingLeft="5sp"
-        android:background="#E6E6FA"
+        android:background="@color/colorSecondary"
         android:weightSum="1">
 
         <TextView
@@ -34,7 +34,7 @@
             android:layout_weight="0.3"
             android:gravity="center|left"
             android:text="Leave Type"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorWhite"/>
 
         <TextView
             android:layout_width="0sp"
@@ -42,7 +42,7 @@
             android:layout_weight="0.175"
             android:gravity="center"
             android:text="Roll Over"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorWhite"/>
 
         <TextView
             android:layout_width="0sp"
@@ -50,7 +50,7 @@
             android:layout_weight="0.175"
             android:gravity="center"
             android:text="Earned"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorWhite"/>
 
         <TextView
             android:layout_width="0sp"
@@ -58,7 +58,7 @@
             android:layout_weight="0.175"
             android:gravity="center"
             android:text="Used"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorWhite"/>
 
         <TextView
             android:layout_width="0sp"
@@ -66,7 +66,7 @@
             android:layout_weight="0.175"
             android:gravity="center"
             android:text="Balanced"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorWhite"/>
 
     </LinearLayout>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#058785</color>
+    <color name="colorPrimary">#0b424d</color>
     <color name="colorPrimaryDark">#058785</color>
     <color name="colorAccent">#058785</color>
     <color name="buttonColor">#7aafff</color>
@@ -13,5 +13,13 @@
     <color name="colorPink">#bf2850</color>
     <color name="colorOrange">#fc6500</color>
     <color name="colorYellow">#f2c600</color>
-
+    <color name="pageBg">#fbfbfb</color>
+    <color name="colorSecondary">#139cb1</color>
+    <color name="colorSubmit">#a33228</color>
+    <color name="colorRed">#ff0c0e</color>
+    <color name="colorHeading">#812525</color>
+    <color name="colorLowerBg">#e0e8e3</color>
 </resources>
+
+
+<!--#7aafff-->

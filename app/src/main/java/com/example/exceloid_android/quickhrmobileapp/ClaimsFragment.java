@@ -2,7 +2,6 @@ package com.example.exceloid_android.quickhrmobileapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,21 +27,21 @@ public class ClaimsFragment extends Fragment {
         pieChart = (PieChart)claim.findViewById(R.id.chart);
 
         ArrayList<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(10f, 0));
-        entries.add(new Entry(5f, 1));
-        entries.add(new Entry(3f, 2));
-        entries.add(new Entry(2f, 3));
+        entries.add(new Entry(3f, 0));
+        entries.add(new Entry(2f, 1));
+        entries.add(new Entry(10f, 2));
+        entries.add(new Entry(5f, 3));
 
         PieDataSet dataset = new PieDataSet(entries, "");
 
         ArrayList<String> labels = new ArrayList<>();
-        labels.add("Created");
-        labels.add("Approved");
-        labels.add("Rejected");
-        labels.add("Pending");
+        labels.add("Rejected: 3");
+        labels.add("Pending: 1");
+        labels.add("Created: 10");
+        labels.add("Approved: 5");
 
         PieData data = new PieData(labels, dataset);
-        dataset.setColors(ColorTemplate.COLORFUL_COLORS); //
+        dataset.setColors(ColorTemplate.COLORFUL_COLORS);
         pieChart.setDescription("");
         pieChart.setData(data);
         data.setDrawValues(false);

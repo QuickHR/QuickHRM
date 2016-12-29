@@ -35,7 +35,7 @@ public class LeaveRequest extends Fragment {
     private int mSeries3Index;
     private final float mSeriesMax = 50f;
     TextView textPercentage, textToGo;
-    private DecoView mDecoView;
+//    private DecoView mDecoView;
     PieChart pieChart;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -48,18 +48,20 @@ public class LeaveRequest extends Fragment {
         pieChart = (PieChart)leave.findViewById(R.id.chart);
 
         ArrayList<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(10f, 0));
-        entries.add(new Entry(5f, 1));
+        entries.add(new Entry(2f, 0));
+        entries.add(new Entry(3f, 1));
         entries.add(new Entry(3f, 2));
-        entries.add(new Entry(2f, 3));
+        entries.add(new Entry(5f, 3));
+        entries.add(new Entry(10f, 4));
 
         PieDataSet dataset = new PieDataSet(entries, "");
 
         ArrayList<String> labels = new ArrayList<>();
-        labels.add("Created");
-        labels.add("Approved");
-        labels.add("Leave Balance");
-        labels.add("View Requests");
+        labels.add("Rejected: 2");
+        labels.add("Pending: 3");
+        labels.add("Balance: 3");
+        labels.add("Approved: 5");
+        labels.add("Created: 10");
 
         PieData data = new PieData(labels, dataset);
         dataset.setColors(ColorTemplate.COLORFUL_COLORS); //
