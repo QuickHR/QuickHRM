@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#aea09e"
-    android:fillViewport="true"
-    >
+    android:fillViewport="true">
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -22,7 +21,6 @@
             android:background="#ebebeb"
             android:weightSum="1"
             android:padding="5sp"
-
             android:orientation="horizontal">
 
             <LinearLayout
@@ -114,8 +112,6 @@
             android:layout_width="match_parent"
             android:layout_height="100sp"
             android:layout_weight="0.8"
-
-
             android:padding="5sp"
             android:gravity="center"
             android:orientation="vertical"

@@ -75,7 +75,6 @@ public class LeaveRequest extends Fragment {
 
                 Intent in = new Intent(getContext(), CreateLeaveRequest.class);
                 startActivity(in);
-
             }
         });
 
