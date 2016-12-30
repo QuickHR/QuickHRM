@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:orientation="horizontal"
+            android:background="@color/colorSmoke">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.65"
+                android:gravity="center"
+                android:paddingLeft="25sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:typeface="sans"
+                    android:text="Kiran Nalla"
+                    android:textColor="#000000"
+                    android:gravity="center|left"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="10sp"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:typeface="sans"
+                    android:textSize="14sp"
+                    android:text="Emp Id. ABC 123"
+                    android:textColor="#a5721e"
+                    android:gravity="center|left"
+                    android:layout_marginTop="10sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="20sp"
+                android:background="@drawable/thickshape">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:background="@mipmap/ic_launcher"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profileDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:text="Profile Details"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/colorSmoke"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_control_point_black_24dp"
+            android:paddingRight="10sp">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/profileDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Middle Name"/>
+
+                <TextView
+                    android:id="@+id/middle_name"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/view_label"></View>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Last Name"/>
+
+                <TextView
+                    android:id="@+id/last_name"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/view_label"></View>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Gender"/>
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/view_label"></View>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Date of Birth" />
+
+                <TextView
+                    android:id="@+id/first_name"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/jobDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:text="Job Details"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/colorSmoke"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_control_point_black_24dp"
+            android:paddingRight="10sp">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/jobDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Designation" />
+
+                <TextView
+                    android:id="@+id/designation"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/view_label"></View>
+
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Employee Department"/>
+
+                <TextView
+                    android:id="@+id/employ_department"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/view_label"></View>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Team"/>
+
+                <TextView
+                    android:id="@+id/team"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/view_label"></View>
+
+            <LinearLayout
+                style="@style/horizontal_label">
+
+                <TextView
+                    style="@style/text_label"
+                    android:text="Employee category"/>
+
+                <TextView
+                    android:id="@+id/employee_categeory"
+                    style="@style/field_label"
+                    android:text="- - -"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:text="Contact Details"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/colorSmoke"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_control_point_black_24dp"
+            android:paddingRight="10sp">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:text="Dependent Details"
+            android:gravity="center|left"
+            android:paddingLeft="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@color/colorSmoke"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/ic_control_point_black_24dp"
+            android:paddingRight="10sp">
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>

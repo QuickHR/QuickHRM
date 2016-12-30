@@ -19,7 +19,7 @@ public class DashBoardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root =  inflater.inflate(R.layout.fragment_dash_board,null);
 
-        applyLeave=(LinearLayout)root.findViewById(R.id.viewProfile);
+        viewProfile=(LinearLayout)root.findViewById(R.id.viewProfile);
         applyClaim=(LinearLayout)root.findViewById(R.id.applyClaim);
         applyLeave=(LinearLayout)root.findViewById(R.id.applyLeave);
 
@@ -35,6 +35,14 @@ public class DashBoardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent in=new Intent(getContext(),ClaimRequest.class);
+                startActivity(in);
+            }
+        });
+
+        viewProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(getContext(),ViewProfile.class);
                 startActivity(in);
             }
         });

@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity{
                 setTitle(item.getTitle());
                 break;
             case R.id.timesheets:
-                fragment = new TimeSheetFragment();
+                fragment = new TimeSheet_Activity();
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, fragment).commit();
                 item.setChecked(true);
                 setTitle(item.getTitle());

@@ -33,4 +33,39 @@
         <item name="android:layout_margin">2sp</item>
     </style>
 
+    <style name="horizontal_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45sp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">0sp</item>
+        <item name="android:weightSum">1</item>
+    </style>
+
+    <style name="text_label">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:paddingLeft">10sp</item>
+    </style>
+
+    <style name="field_label">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">0sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="view_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1sp</item>
+        <item name="android:layout_marginRight">0sp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+
+
 </resources>

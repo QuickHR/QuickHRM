@@ -79,8 +79,7 @@
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:layout_marginTop="5sp"
-                    android:padding="7sp"
-                    >
+                    android:padding="7sp">
 
                     <Button
                         android:layout_width="0sp"
@@ -224,6 +223,23 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.33"
                     android:orientation="vertical"
+                    android:background="@drawable/dashboard_timesheet"
+                    android:layout_margin="5sp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:background="@drawable/white"
+                        android:id="@+id/imageView2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:orientation="vertical"
                     android:background="@drawable/dashboard_reports"
                     android:layout_margin="5sp"
                     android:gravity="center">
@@ -251,23 +267,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="0sp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.33"
-                    android:orientation="vertical"
-                    android:background="@drawable/dashboard_timesheet"
-                    android:layout_margin="5sp"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:layout_width="50sp"
-                        android:layout_height="50sp"
-                        android:background="@drawable/white"
-                        android:id="@+id/imageView2"/>
-
-                </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -283,7 +282,16 @@
                     android:gravity="center|top"
                     android:textColor="#373737"
                     android:typeface="serif"
-                    android:text="View Reports"/>
+                    android:text="Add Timesheet"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:gravity="center|top"
+                    android:textColor="#373737"
+                    android:typeface="serif"
+                    android:text="View Pay Slip"/>
 
                 <TextView
                     android:layout_width="0sp"
@@ -294,16 +302,7 @@
                     android:typeface="serif"
                     android:text="View Projects"/>
 
-                <TextView
-                    android:layout_width="0sp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.33"
-                    android:gravity="center|top"
-                    android:textColor="#373737"
-                    android:typeface="serif"
-                    android:text="Add Timesheet"/>
             </LinearLayout>
-
 
         </LinearLayout>
 

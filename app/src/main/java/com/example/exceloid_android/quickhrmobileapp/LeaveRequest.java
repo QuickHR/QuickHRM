@@ -62,7 +62,7 @@ public class LeaveRequest extends Fragment {
         labels.add("View Requests");
 
         PieData data = new PieData(labels, dataset);
-        dataset.setColors(ColorTemplate.COLORFUL_COLORS); //
+        dataset.setColors(ColorTemplate.COLORFUL_COLORS);
         pieChart.setDescription("");
         pieChart.setData(data);
         data.setDrawValues(false);

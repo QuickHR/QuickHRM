@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.095"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginLeft="5sp"
+            android:id="@+id/back_id" />
+
+        <TextView
+            android:id="@+id/display_weekends"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1 - 01-01-2016 to 07-01-2016"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:text="Date"/>
+
+        <TextView
+            android:id="@+id/display_date"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:paddingLeft="10sp"
+            android:text="Date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.085"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:text="Client"/>
+
+        <Spinner
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:spinnerMode="dropdown"
+            android:gravity="center"
+            android:id="@+id/client_spinner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.085"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:text="Project"/>
+
+        <Spinner
+            android:id="@+id/project_spinner"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:layout_weight="0.6"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.085"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:text="Task"/>
+
+        <EditText
+            android:id="@+id/task_name"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:inputType="textCapSentences"
+            android:layout_weight="0.6"
+            android:gravity="center|left"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:paddingLeft="5sp"
+            android:hint="Task Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.085"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10sp"
+        android:visibility="gone"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:text="Time (hrs)"/>
+
+        <EditText
+            android:id="@+id/enter_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.6"
+            android:textSize="16sp"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:paddingLeft="10sp"
+            android:hint="Enter Time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.055"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="0.7"
+        android:layout_marginTop="5sp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Mon"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Tue"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Wed"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Thu"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Fri"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Sat"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Sun"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="0.7"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/mon_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/tue_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/wed_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/thu_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/fri_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/sat_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/sun_time"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/enter_description"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.4"
+        android:padding="5sp"
+        android:layout_margin="10sp"
+        android:textSize="14sp"
+        android:maxLines="500"
+        android:hint="Description"
+        android:background="@drawable/shape"
+        android:gravity="left" />
+
+    <Button
+        android:id="@+id/save_task"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.09"
+        android:text="Save Task"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="5sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

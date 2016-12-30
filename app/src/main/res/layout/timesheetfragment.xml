@@ -101,11 +101,11 @@
 
         </LinearLayout>
 
-     <!--   <View
-            android:layout_width="match_parent"
-            android:layout_height="1sp"
-            android:visibility="visible"
-            android:background="@color/colorPrimary"></View>-->
+        <!--   <View
+               android:layout_width="match_parent"
+               android:layout_height="1sp"
+               android:visibility="visible"
+               android:background="@color/colorPrimary"></View>-->
 
 
         <LinearLayout
@@ -133,7 +133,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Create Claim\nRequest"
+                    android:text="Create\nTimeSheet"
                     android:gravity="center"
                     android:textColor="@color/colorPink"/>
 
