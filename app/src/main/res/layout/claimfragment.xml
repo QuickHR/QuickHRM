@@ -79,7 +79,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Pending Claims"
+                    android:text="Rejected Claims"
                     android:textSize="11sp"
                     android:textColor="@color/colorYellow"/>
 
@@ -93,7 +93,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="View Claims"
+                    android:text="pending Claims"
                     android:textSize="11sp"
                     android:textColor="@color/colorGreen"/>
 
@@ -140,7 +140,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/approvedRequest"
+                android:id="@+id/viewRequest"
                 android:layout_width="0sp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -175,7 +175,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
                 android:orientation="vertical"
-                android:visibility="gone"
                 android:gravity="center">
 
                 <ImageView
@@ -208,29 +207,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Pending\nRequests"
-                    android:gravity="center"
-                    android:textColor="@color/colorYellow"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/viewRequest"
-                android:layout_width="0sp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <ImageView
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:background="@drawable/ic_visibility_black_24dp"
-                    android:id="@+id/imageView3"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="View\nRequests"
                     android:gravity="center"
                     android:textColor="@color/colorGreen"/>
 

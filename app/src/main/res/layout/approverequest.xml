@@ -12,11 +12,11 @@
         android:layout_height="0sp"
         android:layout_weight="0.08"
         android:text="Leave Approval"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
         android:paddingLeft="10sp"
         android:layout_marginTop="5sp"
         android:gravity="center|left"
-        android:background="#E6E6FA"/>
+        android:background="@color/colorSecondary"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -143,11 +143,11 @@
         android:layout_height="0sp"
         android:layout_weight="0.08"
         android:text="Leave Approval"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
         android:paddingLeft="10sp"
         android:layout_marginTop="15sp"
         android:gravity="center|left"
-        android:background="#E6E6FA"/>
+        android:background="@color/colorSecondary"/>
 
     <LinearLayout
         android:layout_width="match_parent"

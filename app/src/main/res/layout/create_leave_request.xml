@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="#FFFFFF"
+    android:background="@color/pageBg"
     android:padding="10sp">
 
     <TextView
@@ -14,9 +14,9 @@
         android:layout_weight="0.08"
         android:gravity="center"
         android:paddingLeft="5sp"
-        android:background="#E6E6FA"
-        android:textColor="@color/colorPrimary"
-        android:text="Claim Application"
+        android:background="@color/colorSecondary"
+        android:textColor="#FFFFFF"
+        android:text="Leave Application"
         android:id="@+id/textView6" />
 
     <LinearLayout
@@ -30,6 +30,8 @@
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
+            android:typeface="serif"
+            android:textColor="@color/colorHeading"
             android:paddingLeft="5sp"
             android:gravity="center|left"
             android:text="From Date"/>
@@ -64,6 +66,8 @@
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
+            android:typeface="serif"
+            android:textColor="@color/colorHeading"
             android:gravity="center|left"
             android:paddingLeft="5sp"
             android:text="To Date"/>
@@ -89,37 +93,6 @@
         android:layout_height="0.5sp"
         android:background="#B0C4DE"></View>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0sp"
-        android:layout_weight="0.095"
-        android:weightSum="1"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.4"
-            android:paddingLeft="5sp"
-            android:gravity="center|left"
-            android:text="Employee"
-            android:id="@+id/textView3" />
-
-        <Spinner
-            android:id="@+id/employeeSpinner"
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            android:textColor="#000000"
-            android:gravity="center|left"
-            android:text=""/>
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5sp"
-        android:background="#B0C4DE"></View>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -132,6 +105,8 @@
             android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
+            android:typeface="serif"
+            android:textColor="@color/colorHeading"
             android:gravity="center|left"
             android:paddingLeft="5sp"
             android:text="Leave Type"/>
@@ -164,6 +139,8 @@
             android:layout_height="match_parent"
             android:layout_weight="0.4"
             android:paddingLeft="5sp"
+            android:typeface="serif"
+            android:textColor="@color/colorHeading"
             android:gravity="center|left"
             android:text="Leave Period"/>
 
@@ -188,12 +165,14 @@
         android:layout_height="wrap_content"
         android:gravity="center|left"
         android:paddingLeft="5sp"
+        android:typeface="serif"
+        android:textColor="@color/colorHeading"
         android:text="Upload Document"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0sp"
-        android:layout_weight="0.17"
+        android:layout_weight="0.22"
         android:weightSum="1"
         android:gravity="center"
         android:orientation="horizontal">
@@ -220,7 +199,7 @@
             android:layout_width="0sp"
             android:layout_height="35sp"
             android:layout_weight="0.45"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorSecondary"
             android:gravity="center"
             android:paddingLeft="5sp"
             android:textColor="#FFFFFF"
@@ -228,14 +207,45 @@
             android:text="Choose File"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.045"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:textColor="@color/buttonColor"
+            android:text="Google Drive"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:textColor="@color/buttonColor"
+            android:text="Drop Box" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:textColor="@color/buttonColor"
+            android:text="Internal Storage" />
+
+    </LinearLayout>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0sp"
         android:layout_weight="0.08"
         android:gravity="center"
-        android:background="#E6E6FA"
-        android:textColor="@color/colorPrimary"
+        android:background="@color/colorSecondary"
+        android:textColor="#FFFFFF"
         android:text="Remarks"
         android:id="@+id/textView2"/>
 
@@ -245,7 +255,8 @@
         android:layout_weight="0.1"
         android:gravity="left"
         android:padding="5sp"
-        android:hint="enter reason"
+        android:maxLines="1"
+        android:hint="Reason Description"
         android:textSize="14sp"
         android:layout_marginTop="5sp"
         android:inputType="textAutoComplete"
@@ -257,9 +268,9 @@
         android:layout_width="match_parent"
         android:layout_height="0sp"
         android:layout_weight="0.08"
-        android:text="Submit Claim Request"
+        android:text="Submit Leave Request"
         android:layout_marginTop="5sp"
         android:textColor="#FFFFFF"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorSubmit"/>
 
 </LinearLayout>

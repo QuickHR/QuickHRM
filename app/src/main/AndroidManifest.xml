@@ -2,87 +2,70 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.exceloid_android.quickhrmobileapp">
 
-<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-<uses-permission android:name="android.permission.READ_PROFILE"/>
-<uses-permission android:name="android.permission.READ_CONTACTS"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
-<application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:supportsRtl="true"
-    android:theme="@style/AppTheme.NoActionBar"
-    android:windowSoftInputMode="stateAlwaysHidden">
-    <activity
-        android:name=".LoginActivity"
-        android:label="@string/app_name">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
-    </activity>
-    <activity
-        android:name=".MainActivity"
-        android:label="@string/title_activity_main"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".SettingsActivity"
-        android:label="@string/action_settings"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".CreateLeaveRequest"
-        android:label="@string/create_request"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".ViewRequest"
-        android:label="View Request"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".ApproveRequest"
-        android:label="Approve Request"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".LeaveBalance"
-        android:label="Leave Balance"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".ClaimRequest"
-        android:label="New Claim Request"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".Edit_TimeSheetActivity"
-        android:label="Edit Task"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".Update_TimeSheetActivity"
-        android:label="Update Task"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-    <activity
-        android:name=".ViewProfile"
-        android:label="View Profile"
-        android:theme="@style/AppTheme"
-        android:windowSoftInputMode="stateAlwaysHidden">
-    </activity>
-</application>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/action_settings"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".CreateLeaveRequest"
+            android:label="@string/create_request"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".ViewRequest"
+            android:label="View Request"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".ApproveRequest"
+            android:label="Approve Request"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".LeaveBalance"
+            android:label="Leave Balance"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".ClaimRequest"
+            android:label="New Claim Request"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+    </application>
 
 </manifest>

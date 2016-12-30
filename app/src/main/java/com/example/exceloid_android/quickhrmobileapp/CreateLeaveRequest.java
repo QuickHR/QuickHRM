@@ -29,14 +29,14 @@ public class CreateLeaveRequest extends AppCompatActivity {
         setContentView(R.layout.create_leave_request);
         setupActionBar();
 
-        employeeSpinner=(Spinner)findViewById(R.id.employeeSpinner);
+//        employeeSpinner=(Spinner)findViewById(R.id.employeeSpinner);
         leaveSpinner=(Spinner)findViewById(R.id.spinnerLeaveType);
         leavePeriodSpinner=(Spinner)findViewById(R.id.leavePeriodSpinner);
         to_date=(TextView)findViewById(R.id.to_date);
         from_date=(TextView)findViewById(R.id.from_date);
 
         ArrayAdapter<String> adp=new ArrayAdapter<String>(CreateLeaveRequest.this,R.layout.spinner,R.id.text_spinner,s1);
-        employeeSpinner.setAdapter(adp);
+//        employeeSpinner.setAdapter(adp);
         ArrayAdapter<String>adp1=new ArrayAdapter<String>(CreateLeaveRequest.this,R.layout.spinner,R.id.text_spinner,s2);
         leaveSpinner.setAdapter(adp1);
         ArrayAdapter<String>adp2=new ArrayAdapter<String>(CreateLeaveRequest.this,R.layout.spinner,R.id.text_spinner,s3);

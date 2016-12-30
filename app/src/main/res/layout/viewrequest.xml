@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:weightSum="1"
     android:padding="10sp"
-    android:background="#FFFFFF">
+    android:background="@color/pageBg">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,8 +14,8 @@
         android:text="Leave Requests(6)"
         android:gravity="center"
         android:paddingLeft="10sp"
-        android:background="#E6E6FA"
-        android:textColor="@color/colorAccent"
+        android:background="@color/colorSecondary"
+        android:textColor="@color/colorWhite"
         android:id="@+id/textView4"/>
 
     <LinearLayout
